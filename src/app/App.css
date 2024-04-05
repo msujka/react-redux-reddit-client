@@ -1,0 +1,26 @@
+h1 {
+    padding: .77rem 0;
+    text-align: center;
+    font-size: 55px;
+}
+
+.App {
+    height: 100%;
+    padding: 0 5% 5% 5%;
+    display: block;
+    justify-content: space-between;
+}
+
+.App-header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--light)
+}
+
+.App-posts {
+    margin-top: 150px;
+}
+
+

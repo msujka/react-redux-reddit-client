@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");*,:after,:before {
+    box-sizing: border-box
+  }
+  
+  
+  :root {
+    --default-vertical-spacing: 0.75rem;
+    --nav-height: 71.594px;
+    --footer-height: 61px;
+    --landing-page-max-width: 1200px;
+    --sans: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    --serif: Tiempos,serif;
+    --mono: GT America Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    --font-size-0: 8px;
+    --font-size-1: 12px;
+    --font-size-2: 13px;
+    --font-size-3: 16px;
+    --font-size-4: 18px;
+    --font-size-5: 24px;
+    --font-size-6: 32px;
+    --font-size-7: 38px;
+    --font-size-jumbo: 79px;
+    --line-height-1: 16px;
+    --line-height-2: 20px;
+    --line-height-3: 25px;
+    --line-height-4: 28px;
+    --line-height-5: 32px;
+    --line-height-6: 40px;
+    --line-height-7: 48px;
+    --line-height-jumbo: 90px
+  }
+  
+  .light,:root {
+    --Light-Orange: #FFD180;
+    --Pale-Orange: #FFB266;
+    --Pastel-Orange: #FFA366;
+    --Peach-Orange: #FFB380;
+    --Creamsicle: #FFB347;
+    --Apricot-Orange: #FFCC99;
+    --Cantaloupe: #FFA54F;
+    --Tangerine: #FFA500;
+    --Carrot: #FFA07A;
+    --Sunset-Orange: #FDAB9F;
+    --highlight: var(--Light-Orange);
+    --white: #fff;
+    --black: #34495e;
+    --black-light: #58585f;
+    --black-medium: #2c2c30;
+    --gray-light: #f6f9fc;
+    --gray-medium: #dce6e9;
+    --yellow: #ffd848;
+    --purple: #6e00f5;
+    --green: #0a993e;
+    --blue: #0073e6;
+    --magenta: #dc34dc;
+    --theme: var(--yellow);
+    --stripe: #0a2540;
+    --light: var(--white);
+    --dark: var(--black);
+    --text: var(--dark);
+    --contrast-dark: var(--dark);
+    --code-background: var(--gray-light);
+    --code-border: var(--gray-medium);
+    --toc-border: rgba(0,0,0,.14);
+    --translucent: rgba(0,0,0,.4);
+  
+    --docsearch-primary-color: var(--black-medium)!important;
+    --docsearch-logo-color: var(--black-medium)!important
+  }
+  
+  body {
+    color: var(--text);
+    background: var(--light);
+    font-family: var(--sans);
+    word-spacing: 0.05rem;
+    line-height: 1.6rem;
+  }
+  
+  code {
+    font-family: GT America Mono,Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  }
+  
+  .h1,h1 {
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-7);
+  }
+  
+  .h2,h2 {
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+    margin-top: 2rem
+  }
+  
+  .h3,h3 {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    margin-top: 1rem
+  }
+  
+  .h4,h4 {
+    margin-top: 0.5rem
+  }
+  
+  .h4,.h5,h4,h5 {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3)
+  }
+  
+  .highlight {
+    background-color: var(--highlight);
+    border-radius: 5px;
+  }
+  
+  .hover {
+    transition: all 0.3s ease;
+    background-color: var(--highlight);
+    border-radius: 5px;
+  }
+  
+  a .hover {
+    transition: all 0.3s ease;
+    background-color: var(--highlight);
+    border-radius: 5px;
+  }
